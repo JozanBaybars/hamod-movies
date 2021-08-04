@@ -1,0 +1,7 @@
+<div class="pager">
+  <div class="first page" (click)="pageLoad(1)">F</div>
+  <div *ngFor="let i of arr" (click)="pageLoad(i)" [ngClass]="current_page == i ? 'page active' : 'page'">
+    {{i}}
+  </div>
+  <div class="last page" (click)="pageLoad(pages_count)">L</div>
+</div>

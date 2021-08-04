@@ -1,0 +1,31 @@
+.pager{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  .page{
+    display: flex;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    line-height: 2rem;
+    border: 0.5px solid #333;
+    border-radius: 4px;
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+    margin: 0.5rem;
+    cursor: pointer;
+
+
+
+    &.active{
+      background-color: #5da93c;
+    }
+
+    &:hover{
+      background-color: #5da93c;
+    }
+  }
+}

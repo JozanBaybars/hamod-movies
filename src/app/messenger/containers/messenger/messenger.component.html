@@ -1,0 +1,7 @@
+
+<app-movies-pager [limit]="limit" [moviesCount]="moviesCount" (page)="loadData($event)"></app-movies-pager>
+<div class="movies-container">
+  <app-movie *ngFor="let item of movies" [m]="item"></app-movie>
+</div>
+<app-movies-pager [limit]="limit" [moviesCount]="moviesCount" (page)="loadData($event)"></app-movies-pager>
+
